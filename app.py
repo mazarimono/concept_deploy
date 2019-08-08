@@ -12,7 +12,7 @@ ex_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 app = dash.Dash(__name__, external_stylesheets=ex_stylesheets)
 
 # ❷ serverをProcfileのgunicornに設定。
-app.server = server
+server = app.server
 
 app.layout = html.Div(
     children=[
